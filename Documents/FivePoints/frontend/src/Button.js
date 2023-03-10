@@ -5,7 +5,7 @@ function Button() {
   const [response, setResponse] = useState(null);
   const handleClick = async () => {
     try {
-      const res = await fetch('http://localhost:9000');
+      const res = await fetch('http://ec2-54-237-216-116.compute-1.amazonaws.com:9000');
       const json = await res.json();
       setResponse(json);
     } catch (err) {
